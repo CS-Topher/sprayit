@@ -28,7 +28,7 @@ class User {
     /**
      * Get User Email: Returns the email of the passed in user.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function getEmail($_user) {
         return $_user->email;
@@ -40,7 +40,7 @@ class User {
      * Authenticate User Login: Checks the credentials that are passed in as parameters and proceeds to perform
      * the login flow.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function authenticate($_email = null, $_password = null, $_errors = []) {
         $_email = Auth::sanitizeEmail($_email);
@@ -142,7 +142,7 @@ class User {
     /**
      * Create User Session: Sets the session variables to the passed in user's properties or values.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     protected static function createUserSession($_user) {
         $_SESSION['user_email'] = $_user->email;
@@ -155,7 +155,7 @@ class User {
     /**
      * Destroy User Session: Un-sets all of the session variables for the logged in user.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function destroyUserSession() {
         unset($_SESSION['user_email']);

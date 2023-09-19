@@ -12,7 +12,7 @@ class PostTest {
     /**
      * Method used to begin tests on the selected method(s).
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function systemTest() {
         // Normal test cases below.
@@ -54,7 +54,7 @@ class PostTest {
      * @param $_expected
      * @return bool
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function testCheckFields($_title, $_body, $_expected) {
         $result = Post::checkFields($_title, $_body);

@@ -12,7 +12,7 @@ class Controller {
      * @param $_model
      * @return mixed
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     protected function model($_model) {
         // Require model file
@@ -25,7 +25,7 @@ class Controller {
     /**
      * View function: Allows a controller to render a view by passing any data into it.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     protected function view($_view, $_data = []) {
         // Check for view file

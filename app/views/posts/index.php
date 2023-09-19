@@ -1,4 +1,4 @@
-<!--Author: Christopher Thacker-->
+<!--Author: Chris T.-->
 <?php require APP_ROOT . '/views/inc/header.php'; ?>
 <h2><span class="blue">Water</span><span class="green">cooler</span></h2>
         <form action="<?php echo URL_ROOT . '/' . POSTS_ADD; ?>" method="post" style="padding-top: 25px;">

@@ -16,7 +16,7 @@ class DatabaseConnector
     /**
      * Returns all records from a specified table.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function getAll($_table)
     {
@@ -29,7 +29,7 @@ class DatabaseConnector
      *
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function getAllPosts()
     {
@@ -68,7 +68,7 @@ class DatabaseConnector
     /**
      * Passes the email value to the specified database translator's findUserByEmail method.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function findUserByEmail($_email)
     {
@@ -99,7 +99,7 @@ class DatabaseConnector
      * @param $_uuid
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function createUser($_fname, $_lname, $_email, $_password, $_uuid)
     {
@@ -116,7 +116,7 @@ class DatabaseConnector
      * @param $_postUuid
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function createPost($_title, $_body, $_userUuid, $_postUuid)
     {
@@ -147,7 +147,7 @@ class DatabaseConnector
      * @param $_postUuid
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function deletePost($_postUuid)
     {

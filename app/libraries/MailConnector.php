@@ -16,7 +16,7 @@ class MailConnector {
      * @param string $_text
      * @param string $_html
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function send($_to = '', $_toName = '', $_subject = '', $_text = '', $_html = '') {
         $mailTranslator = static::$translator;

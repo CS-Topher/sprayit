@@ -14,7 +14,7 @@ class SprayItCore {
      * SprayIt Core constructor: This is the constructor for the core class, which ends up directing the rest
      * of the program.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function __construct() {
 
@@ -60,7 +60,7 @@ class SprayItCore {
     /**
      * Get URL: This fetches the URL, sanitizes it, then returns the prepared URL.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function getURL() {
         if (isset($_GET['url'])) {

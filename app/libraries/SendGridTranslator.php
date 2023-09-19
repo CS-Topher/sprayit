@@ -10,7 +10,7 @@ class SendGridTranslator {
     /**
      * Send method: This is used to send an email message to a specified user.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function send($_to = '', $_toName = '', $_subject = '', $_text = '', $_html = '') {
         try {

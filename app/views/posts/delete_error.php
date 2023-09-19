@@ -1,4 +1,4 @@
-<!--Author: Christopher Thacker-->
+<!--Author: Chris T.-->
 <?php require APP_ROOT . '/views/inc/header.php'; ?>
 <h2>Delete Post</h2>
 <div>

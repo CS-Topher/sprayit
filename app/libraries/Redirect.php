@@ -9,7 +9,7 @@ class Redirect {
     /**
      * To method: Performs the action of redirecting "to" a specified page.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function to($_page = null) {
         if ($_page != null && $_page != '') {

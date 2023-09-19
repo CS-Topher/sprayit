@@ -22,7 +22,7 @@ class MySqlTranslator {
      * @param $_userId
      * @return bool
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function getUuid($_userId) {
         $db = new MySqlTranslator();
@@ -40,7 +40,7 @@ class MySqlTranslator {
      * A function to read all posts within the database with the poster's information.
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function getAllPosts() {
         $db = new MySqlTranslator();
@@ -91,7 +91,7 @@ class MySqlTranslator {
      * @param $_table
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function getAll($_table) {
         $db = new MySqlTranslator();
@@ -110,7 +110,7 @@ class MySqlTranslator {
      * MySqlTranslator constructor: Establishes the connection to the database upon instantiation using
      * config-defined credentials.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function __construct() {
         // Sets up DSN
@@ -133,7 +133,7 @@ class MySqlTranslator {
      * safely use it. This process defaults to string if no other type can be determined. A type can be passed in to
      * automatically bind the value as that type without checking for a matching one.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function bind($_param, $_value, $_type = null) {
         if (is_null($_type)) {
@@ -157,7 +157,7 @@ class MySqlTranslator {
     /**
      * Query SQL: Prepares the passed in SQL code for database use.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function query($_sql) {
         $this->stmt = $this->dbh->prepare($_sql);
@@ -166,7 +166,7 @@ class MySqlTranslator {
     /**
      * Execute statement: Runs the stmt property against the database.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function execute() {
         return $this->stmt->execute();
@@ -178,7 +178,7 @@ class MySqlTranslator {
      *
      * @return mixed
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function resultSet() {
         $this->execute();
@@ -188,7 +188,7 @@ class MySqlTranslator {
     /**
      * Return single result: Returns a single row from the database if it matches the stmt property's query code.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function single() {
         $this->execute();
@@ -199,7 +199,7 @@ class MySqlTranslator {
      * Get row count: Returns the number of rows in the database that were affected by the execution of the stmt
      * property.
      *
-     * @author Christopher Thacker, Ioannis Batsios
+     * @author Chris T., Ioannis Batsios
      */
     public function rowCount() {
         return $this->stmt->rowCount();
@@ -260,7 +260,7 @@ class MySqlTranslator {
      * Find a User by Email: Takes an email address parameter and tries to match it with one in the database. If
      * a match is found, it returns the corresponding row. If not, it returns false.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function findUserByEmail($_email) {
 
@@ -340,7 +340,7 @@ class MySqlTranslator {
      * @param $_postUuid
      * @return bool
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function deletePost($_postUuid) {
         $db = new MySqlTranslator();

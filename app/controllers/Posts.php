@@ -11,7 +11,7 @@ class Posts extends Controller {
     /**
      * Posts constructor: Used to block unauthorized users from viewing the posts.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function __construct() {
         if (!Session::isLoggedIn()) {
@@ -25,7 +25,7 @@ class Posts extends Controller {
      * someone typed "localhost/sprayit/posts" into the browser, without a method, THE PROGRAM WOULD CRASH because
      * an index method would not be found.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function index() {
         //die('In Posts/index');
@@ -124,7 +124,7 @@ class Posts extends Controller {
      *
      * @param $_postUuid
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function delete($_postUuid) {
 
@@ -145,7 +145,7 @@ class Posts extends Controller {
     /**
      * Action for the delete error page, which simply loads the view for it.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function delete_error() {
         $this->view(POSTS_DELETE_ERROR);
@@ -154,7 +154,7 @@ class Posts extends Controller {
     /**
      * Action for the delete success page, which simply loads the view for it.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function delete_success() {
         $this->view(POSTS_DELETE_SUCCESS);

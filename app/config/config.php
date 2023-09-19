@@ -22,8 +22,7 @@ define('FALSE', 0);
 define('APP_ROOT', dirname(dirname(__FILE__)));
 
 // URL Root
-//define('URL_ROOT', 'http://localhost/sprayit');
-define('URL_ROOT', 'https://spray-it-project.herokuapp.com/sprayit');
+define('URL_ROOT', 'http://localhost/sprayit');
 
 // DB Translator Name
 define('DB_TRANSLATOR', 'MySqlTranslator');

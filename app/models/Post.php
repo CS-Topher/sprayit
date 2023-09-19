@@ -23,7 +23,7 @@ class Post {
      *
      * @return array
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function getPosts() {
         return DatabaseConnector::getAllPosts();
@@ -94,7 +94,7 @@ class Post {
      * @param $_postUuid
      * @return mixed
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function deletePost($_postUuid) {
         try {
@@ -136,7 +136,7 @@ class Post {
      * @param $_postUuid
      * @return bool
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function verifyAuthor($_postUuid) {
         if (Session::fieldIsSet('user_uuid')) {

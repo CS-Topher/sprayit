@@ -14,7 +14,7 @@ class Users extends Controller {
      * someone typed "localhost/sprayit/users" into the browser, without a method, THE PROGRAM WOULD CRASH because
      * an index method would not be found. Use this method to redirect to another page.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function index() {
         Redirect::to(LOGIN_PATH);
@@ -24,7 +24,7 @@ class Users extends Controller {
      * Login: Transfers login form data from the login view to the User model to be handled. First checks if the user
      * logged in, redirecting them to the calendar page if so.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function login() {
         if (Session::isLoggedIn()) {
@@ -80,7 +80,7 @@ class Users extends Controller {
     /**
      * Log user out: Destroys the local session variable, which logs the user out.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public static function logout() {
         User::destroyUserSession();

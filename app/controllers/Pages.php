@@ -6,7 +6,7 @@
  * Pages controller: This controller handles all data transfers for any view within the 'pages' directory. Each method
  * corresponds to a view (the name must be EXACTLY the same).
  *
- * @author Christopher Thacker, Ioannis Batsios
+ * @author Chris T., Ioannis Batsios
  */
 class Pages extends Controller {
 
@@ -16,7 +16,7 @@ class Pages extends Controller {
      * someone typed "localhost/sprayit/pages" into the browser, without a method, THE PROGRAM WOULD CRASH because
      * an index method would not be found. Use this method to redirect to another page.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function index() {
         Redirect::to(POSTS_HOME);
@@ -25,7 +25,7 @@ class Pages extends Controller {
     /**
      * 404: Loads the 404 page not found view.
      *
-     * @author Christopher Thacker
+     * @author Chris T.
      */
     public function not_found() {
         $this->view(NOT_FOUND_PATH);
